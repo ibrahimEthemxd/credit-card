@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+:root{
+    --primary-color: hsl(186, 70%, 45%);
+    --white: #fff;
+    --black: #333;
+
+}
+body{
+    font-size: 10px;
+    font-family: "Raleway", sans-serif;
+    background: linear-gradient(0deg, var(--primary-color), var(--white));
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-container{
+    width: 28rem;
+    height: 17rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-bottom: -9rem;
+    margin-top: 1.5rem;
+    transition: 400ms all ease;
+    transform: perspective(1000px) rotateY(20deg);
+}
+.card-container h3{
+    font-size: 2.5rem;
+    font-family: "Teko", sans-serif !important;
+    text-align: right;
+    color: var(--white);
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+}
+.card-container h3 span{
+    font-size: 1.5rem;
+}
+.card-img .troy{
+    width: 6rem;
+    bottom: 1rem;
+    right: 1rem;
+    position: absolute;
+    background-color: var(--white);
+    padding: 8px 1rem;
+    border-radius: 5px;
+}
+.card-img .chip{
+    width: 5rem;
+    top: 30%;
+    left: 1rem;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.card-info {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.card-info p{
+    margin: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-info .card-number p{
+    font-size: 1.8rem;
+    margin: 1.5rem 1rem;
+}
+.card-info .card-name{
+    margin-bottom: -5rem;
+    margin-left: -5px;
+}
+.card-info .card-date{
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: -2rem;
+    margin-top: 4rem;
+    margin-left: 5rem;
+}
+
+.card-container2{
+    width: 28rem;
+    height: 17rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-bottom: -9rem;
+    margin-top: 1.5rem;
+    transition: 400ms all ease; 
+    transform: perspective(1000px) rotateY(-20deg);
+    display: none;
+}
+.card-container2 .div{
+    width: 100%;
+    height: 4rem;
+    color: var(--white);
+    background-color: var(--black);
+    margin-top: 2rem;
+}
+.card-container2 .cvv-area{
+    margin-top: 1rem;
+    width: 100%;
+    height: 4rem;
+}
+.card-container2 .cvv-area .cvv p{
+    text-align: right;
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-right: 1.6rem;
+    margin-bottom: 4px;
+}
+.card-container2 .cvv-area .cvv .cvv-back{
+    width: 90%;
+    height: 3rem;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+.card-container2 .cvv-area .cvv .cvv-back p{
+    text-align: right;
+    color: var(--black);
+    padding-top: 9px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    padding-right: 5px;
+}
+
+.form-container{
+    width: 42rem;
+    background-color: var(--white);
+    padding: 3rem;
+    padding-top: 11rem;
+    border-radius: 1rem;
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.5);
+}
+.form-container form div label{
+   font-size: 1.4rem;
+   margin-bottom: 4px;
+   color: var(--black);
+}
+.form-container form div input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--black);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-container form .card-number-input{
+    display: flex;
+    flex-direction: column;
+}
+.form-container form .card-name-input{
+    display: flex;
+    flex-direction: column;
+}
+.form-container form .card-date-input{
+    display: flex;
+    flex: 1;
+}
+.form-container form .card-date-input .card-date-month-input{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.form-container form .card-date-input .card-date-year-input{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.form-container form .card-date-input .card-date-month-input select{
+    padding: 7px;
+    margin-right: 1rem;
+}
+.form-container form .card-date-input .card-date-year-input select{
+    padding: 7px;
+}
+.form-container form .card-submit-input input{
+    border: 0;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 100ms ease;
+}
+.form-container form .card-submit-input input:hover{
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
